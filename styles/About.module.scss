@@ -1,0 +1,30 @@
+@import '../styles/functions';
+@import './Constats.module.scss';
+
+.highlightMe {
+    color: from-theme("texts", "primary");
+}
+
+.title {
+    margin: 0;
+    font-family: use-font("secondary");
+    text-align: center;
+}
+
+.subtitle {
+    margin: 0;
+    font-family: use-font("secondary");
+    text-align: center;
+}
+
+.intro {
+    display: block;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: use-font("secondary");
+}
+
+.inlineLink {
+    color: from-theme("texts", "primary");
+    font-size: 2rem;
+}

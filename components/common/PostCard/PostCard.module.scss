@@ -1,0 +1,49 @@
+@import '../../../styles/functions.scss';
+
+.container {
+    padding: 1rem;
+    margin-top: -1px;
+    border: 1px solid from-theme("texts", "primary");
+    background-color: black;
+    transition: transform 0.15s ease 0s;
+
+    &:hover {
+        transform: scale(1.05);
+        z-index: 1;
+        cursor: pointer;
+    }
+    @media (max-width: $md) {
+        &:hover {
+            transform: none;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.content { }
+
+.title {
+    font-family: use-font("secondary");
+    margin: 0;
+}
+
+.date {}
+
+.footer {
+    font-family: use-font("secondary");
+    display: flex;
+    @media (max-width: $md) {
+        flex-direction: column;
+        align-content: space-between;
+    }
+}
+
+.categoryLabel {
+    margin-right: auto;
+    color: from-theme("texts", "primary");
+    font-weight: bold;
+    @media (max-width: $md) {
+        margin-bottom: 0.6rem;
+    }
+}

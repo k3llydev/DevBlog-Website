@@ -1,0 +1,94 @@
+@import '../../../styles/functions.scss';
+
+.paginationButton {
+    background: from-theme("texts", "primary");
+    font-family: use-font("primary");
+    border: 0;
+    padding: 1rem;
+    margin-bottom: -1px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: from-theme("backgrounds", "simple");
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.filterContainer {
+    $heightTransition: max-height 1s cubic-bezier(0, 1, 0, 1);
+    $borderTransition: border 1s cubic-bezier(0, 1, 0, 1);
+    $transition: $heightTransition, $borderTransition;
+
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    overflow: hidden;
+    max-height: 0px;
+    border: 1px solid black;
+}
+
+.open {
+    $heightTransition: max-height 1s ease-in-out;
+    $borderTransition: border 1s ease-in-out;
+    $transition: $heightTransition, $borderTransition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    max-height: 100vh;
+    border: 1px solid from-theme("texts", "primary");
+}
+
+.filterContent {
+    margin: 1rem;
+}
+
+.tagButton {
+
+    font-family: use-font("secondary");
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-weight: 600;
+
+    display: inline-block;
+    border: 1px solid from-theme("texts", "primary");
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.selected {
+    background: from-theme("texts", "primary");
+    color: black;
+}
+
+.filteringTitle {
+    margin: 0;
+}
+
+.applyButton {
+    background: from-theme("texts", "primary");
+    border: 0;
+    border-radius: 5px;
+    font-family: use-font("secondary");
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: from-theme("backgrounds", "simple");
+}
+
+.resetButton {
+    background-color: transparent;
+    color: from-theme("texts", "primary");
+    margin-left: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    font-family: use-font("secondary");
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}

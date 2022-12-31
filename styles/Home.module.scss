@@ -1,0 +1,92 @@
+@import 'functions.scss';
+
+.homeCenteredContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 660px;
+}
+
+.notFoundLabel {
+    font-family: use-font("secondary");
+    font-weight: 500;
+}
+
+.lightText {
+    color: from-theme("texts", "primary");
+}
+
+.largeImageBorder {
+    border: 1px solid from-theme("texts", "primary") !important;
+}
+
+.quoteBox {
+    border: from-theme("borders", "fullBox");
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quoteMainText {
+    font-style: italic;
+}
+
+.highlightedText {
+    color: from-theme("texts", "primary");
+    font-weight: 600;
+}
+
+.inlineQuote {
+    display: block;
+}
+
+.hiddenElement {
+    opacity: 0;
+}
+
+.homeDivider {
+    border: from-theme("borders", "fullBox");
+    background: from-theme("texts", "primary");
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.homeTitle {
+    font-family: use-font("secondary");
+    font-weight: 400;
+}
+
+
+.footerContainer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.footerLink {
+    color: from-theme("texts", "primary");
+    font-family: use-font("secondary");
+    margin: 1rem 1.5rem;
+}
+
+.footerItem {
+    margin-left: 0.5rem;
+    vertical-align: baseline;
+}
+
+.siteDescriptionHighlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+:export {
+    assetSize: 200px;
+    primaryColor: from-theme("texts", "primary");
+}

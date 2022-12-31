@@ -1,0 +1,154 @@
+@import '../../../styles/functions.scss';
+
+$headerHeight: 6rem;
+
+@mixin mainContainer {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-height: $headerHeight;
+    display: flex;
+    color: from-theme("texts", "primary");
+    font-family: use-font("secondary");
+    transition: opacity 1s ease-in;
+    opacity: 1;
+
+    &:hover {
+        a {
+            i {
+                transform: translate(0);
+                font-size: calc($headerHeight / 4) !important;
+                @media (max-width: $md) {
+                    transform: translateY(50%);
+                    font-size: calc($headerHeight / 3.5) !important;
+                }
+            }
+            span {
+                opacity: 1;
+                @media (max-width: $md) {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin linkItem {
+    width: $headerHeight;
+    transition: all .2s linear;
+    margin: auto 0;
+    i {
+        font-size: calc($headerHeight / 3.5);
+        transition: all .2s linear;
+        display: block;
+        transform: translateY(50%);
+    }
+    span {
+        transition: all .2s linear;
+        opacity: 0;
+    }
+
+    @media (max-width: $md) {
+        margin: 1rem -1rem;
+    }
+}
+
+.container {
+    @include mainContainer;
+}
+
+.centeredContainer {
+    @include mainContainer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    @media (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+        max-height: unset;
+        text-align: center;
+    }
+}
+
+.containerHidden {
+    opacity: 0;
+    transition: none;
+    pointer-events: none;
+}
+
+@mixin subContainer {
+    flex: 1;
+    display: flex;
+    min-width: -webkit-min-content;
+    text-align: center;
+    margin: 1rem 0;
+    a {
+        @include linkItem;
+    }
+
+    @media (max-width: $md) {
+        margin: 0;
+    }
+
+}
+
+.sectionItem {
+    @media (max-width: $md) {
+        display: none;
+    }
+}
+
+.mobileOnly {
+    display: none;
+    @media (max-width: $md) {
+        display: block;
+    }
+}
+
+// Left
+.dynamicContainer {
+    @include subContainer();
+    flex: 1;
+    justify-content: right;
+}
+
+// Center
+.centerContainer {
+    margin: 0 1rem;
+}
+
+// Right
+.staticContainer {
+    @include subContainer();
+    flex: 1;
+}
+
+
+.centeredContainer .dynamicContainer {
+    @media (max-width: $md) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.centeredContainer .staticContainer {
+    @media (max-width: $md) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.sectionLabel {
+    display: block;
+    font-size: calc($headerHeight / 5);
+}
+
+.sectionIcon {
+    font-size: calc($headerHeight / 4);
+}
+
+:export {
+    height: $headerHeight;
+    color: from-theme("texts", "primary");
+}

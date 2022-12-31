@@ -1,0 +1,22 @@
+@import '../../../styles/functions.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.item {
+    padding: 1rem;
+    border: 1px solid from-theme("texts", "primary");
+    margin-left: -1px;
+    font-family: use-font("secondary");
+}
+
+.active {
+    background: from-theme("texts", "primary");
+}
+
+.disabled {
+    display: none;
+}

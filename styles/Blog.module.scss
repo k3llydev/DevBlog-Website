@@ -1,0 +1,33 @@
+@import 'functions.scss';
+@import './Constats.module.scss';
+
+.welcomeContainer {
+    text-align: center;
+    font-family: use-font("secondary");
+}
+
+.blogCardsContainer {
+    margin: 0 0 2rem 0;
+}
+
+.welcomeTitle {
+    margin: 0;
+}
+
+.divider {
+    margin: 0;
+    width: 100%;
+    border: 1px solid from-theme("texts", "primary");
+    margin: 0.5rem auto;
+}
+
+.welcomeDescription {
+    font-family: use-font("secondary");
+}
+
+.postTitle {
+    font-family: use-font("secondary");
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+}

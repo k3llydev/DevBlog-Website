@@ -1,0 +1,18 @@
+$primary: #9200C9;
+$secondary: #FFF;
+$background: #000;
+$white: #FFF;
+
+$theme: (
+    "texts": (
+        "primary": $primary,
+        "secondary": $secondary,
+        "white": $white
+    ),
+    "backgrounds": (
+        "simple": $background
+    ),
+    "borders": (
+        "fullBox": 1.5px solid $primary
+    )
+);

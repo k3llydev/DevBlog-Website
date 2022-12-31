@@ -1,0 +1,27 @@
+@import '_theme.scss';
+
+@function use-font($type) {
+    $primary: 'Roboto Slab', serif;
+    $secondary: 'Exo 2', sans-serif;
+    @if($type == 'primary') {
+        @return $primary;
+    }
+    @if($type == 'secondary') {
+        @return $secondary;
+    }
+}
+
+@function from-theme($keys...) {
+    $map: $theme;
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+};
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

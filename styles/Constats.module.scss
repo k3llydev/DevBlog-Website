@@ -1,0 +1,109 @@
+@import './functions.scss';
+
+.GenericContainer {
+    margin: 2rem auto 0;
+    max-width: 990px;
+    @media (max-width: $md) {
+        width: 100%;
+        max-width: unset;
+        margin-top: 0;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+.highlightedText {
+    color: from-theme("texts", "primary");
+}
+
+.floatingInfoContainer {
+    text-align: right;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -12%;
+    width: 10%;
+    div {
+        display: block;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        span {
+            display: block;
+        }
+        span:nth-child(1)::after {
+            content: ": ";
+        }
+    }
+    @media (max-width: $md) {
+        position: relative;
+        margin-left: unset;
+        display: flex;
+        width: unset;
+        text-align: left;
+    }
+}
+
+.floatingInfoLabel {
+    color: from-theme("texts", "primary");
+    font-family: use-font("secondary");
+}
+
+.floatingInfoValue {
+    font-family: use-font("secondary");
+}
+
+// Blog Markdown Parser
+.markdownContentAsHTML {
+    line-height: calc(3.125ex);
+    text-align: justify;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    a {
+        text-decoration: underline;
+        color: from-theme("texts", "primary");
+    }
+
+    table {
+        border-spacing: 0;
+        table-layout: auto;
+
+        th {
+            border-bottom: 2px solid from-theme("texts", "primary");
+            white-space: nowrap;
+            padding-right: 3rem;
+        }
+
+        td {
+            width: 1px;
+            white-space: nowrap;
+        }
+
+    }
+}
+
+$sizes: (
+    "ExtraSmall": 0.5rem,
+    "Small": 1rem,
+    "Medium": 1.5rem,
+    "Large": 2rem,
+    "ExtraLarge": 2.5rem
+);
+@each $size, $value in $sizes {
+    .SpacingTop#{size} {
+        margin-top: $value;
+    }
+    .SpacingRight#{size} {
+        margin-right: $value;
+    }
+    .SpacingBottom#{size} {
+        margin-bottom: $value;
+    }
+    .SpacingLeft#{size} {
+        margin-left: $value;
+    }
+}
