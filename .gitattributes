@@ -1,0 +1,5 @@
+# Turning percentage into TypeScript because the only existing .js files are from configuration
+*.js linguist-language=TypeScript
+
+# Removing SCSS since it is irrelevant to the project as a language
+*.scss ignore
