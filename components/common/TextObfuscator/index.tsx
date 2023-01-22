@@ -14,7 +14,7 @@ const TextObfuscator = ({ text }: TextObfuscatorProps) => {
 
     const textedCharacters = characters.map((char: string, index: number) => `
         <text 
-            font-family="Consolas"
+            font-family="monospace"
             font-size="${size}"
             x="${(size - 1) * (index)}"
             y="${size}"
