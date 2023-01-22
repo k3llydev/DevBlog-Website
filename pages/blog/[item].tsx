@@ -62,7 +62,7 @@ const PostDetail: NextPage<PostProps> = ({ post: { title, author, date, last_mod
             <ArticleHead seo={seo} />
 
             <InlineTags tags={ tags.map(tag => tag.label) } ></InlineTags>
-            <h1 className={styles.postTitle}>{title}</h1>
+            <h1 className={styles.postTitle} dangerouslySetInnerHTML={{ __html: title }}></h1>
             <div className={styles.floatingInfoContainer}>
                 <div>
                     <span className={styles.floatingInfoLabel}>Category</span>

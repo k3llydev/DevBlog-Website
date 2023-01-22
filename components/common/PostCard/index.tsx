@@ -11,7 +11,7 @@ const PostCard = ({ hash, title, description, illustration, date, tags, category
             <a>
                 <div className={styles.container}>
                     <div className={styles.content}>
-                        <h2 className={styles.title}>{title}</h2>
+                        <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: title }}></h2>
                         <span className={styles.date}>{date}</span>
                     </div>
                     <div className={styles.footer}>
