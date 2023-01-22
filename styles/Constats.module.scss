@@ -56,6 +56,17 @@
     line-height: calc(3.125ex);
     text-align: justify;
 
+    code:not([class]) {
+        font-family: use-font("primary");
+        color: from-theme("texts", "primary");
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
     h2 {
         margin: 0;
         padding: 0;
