@@ -18,10 +18,10 @@ jobs:
         run: npm run build
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
-          with:
-            repoToken: '${{ secrets.GITHUB_TOKEN }}'
-            firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_K3LLYDEV_PORTFOLIO }}'
-            channelId: live
-            projectId: k3llydev-portfolio
-          env:
-            FIREBASE_CLI_EXPERIMENTS: webframeworks
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_K3LLYDEV_PORTFOLIO }}'
+          channelId: live
+          projectId: k3llydev-portfolio
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
