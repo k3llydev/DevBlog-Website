@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Native, OpenGraph, Google } from '../../../../lib/seo';
+import { decodeHtmlCharCodes } from '../../../../lib/utils';
 
 const ArticleHead = ({
     seo: { title, baseName, description, url, author, keywords, category, published_date, last_modified }
@@ -8,9 +9,9 @@ const ArticleHead = ({
         <Head>
 
             {/* SEO */}
-            { Native.title(`${title} | ${baseName}`) }
+            { Native.title(`${decodeHtmlCharCodes(title)} | ${baseName}`) }
             { Native.description(`${description}`) }
-            { OpenGraph.title(`${title} | ${baseName}`) }
+            { OpenGraph.title(`${decodeHtmlCharCodes(title)} | ${baseName}`) }
             { OpenGraph.description(`${description}`) }
             { OpenGraph.type('article') }
             { OpenGraph.image() }

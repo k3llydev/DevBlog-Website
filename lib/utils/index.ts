@@ -22,3 +22,11 @@ export const StaticUrlGenerator = (nodejs__filename: string, params?: Object): s
     }
     return new URL(rawPath, CONSTANTS.APP_HOST).href;
 };
+
+/**
+ * A function that helps translate html charcodes into the actual character.
+ * Useful for <title> and alike tags.
+ * @param str The string where the html charcodes will be replaced.
+ * @returns {String}
+ */
+export const decodeHtmlCharCodes = (str: string) => str.replace(/(&#(\d+);)/g, (_, __, charCode) => String.fromCharCode(charCode));
