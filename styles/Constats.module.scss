@@ -61,6 +61,19 @@
         color: from-theme("texts", "primary");
     }
 
+    code[class] {
+        white-space: pre;
+        display: block;
+        padding: 1rem;
+        line-height: 1rem;
+        background: #000;
+        filter: contrast(0.85);
+        overflow: auto;
+        &::-webkit-scrollbar {
+            height: 5px;
+        }
+    }
+
     img {
         max-width: 100%;
         display: block;

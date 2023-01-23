@@ -93,11 +93,9 @@ const AppHeader = ({ detectBackNavigation, shareShortenedURL, show, variant = 'd
 
             <div id="dynamicContainer" className={styles.dynamicContainer}>
                 { template.dynamicItems.map((section, id) => (
-                    <Link key={`dynamic-section-${id}`} href={section.href}>
-                        <a className={mobileOnlyClassSelector(section.mobileOnly, styles.sectionItem)} {...actionBinding(section.action)}>
-                            <i className={`${styles.sectionIcon} ${section.icon}`}></i>
-                            <span className={styles.sectionLabel}>{section.label}</span>
-                        </a>
+                    <Link key={`dynamic-section-${id}`} href={section.href} className={mobileOnlyClassSelector(section.mobileOnly, styles.sectionItem)} {...actionBinding(section.action)}>
+                        <i className={`${styles.sectionIcon} ${section.icon}`}></i>
+                        <span className={styles.sectionLabel}>{section.label}</span>
                     </Link>
                 )) }
             </div>
@@ -106,11 +104,9 @@ const AppHeader = ({ detectBackNavigation, shareShortenedURL, show, variant = 'd
             </div>
             <div id="staticContainer" className={styles.staticContainer}>
                 { template.staticItems.map((section, id) => (
-                    <Link key={`static-section-${id}`} href={section.href}>
-                        <a className={mobileOnlyClassSelector(section.mobileOnly, styles.sectionItem)} {...actionBinding(section.action)}>
-                            <i className={`${styles.sectionIcon} ${section.icon}`}></i>
-                            <span className={styles.sectionLabel}>{section.label}</span>
-                        </a>
+                    <Link key={`static-section-${id}`} href={section.href} className={mobileOnlyClassSelector(section.mobileOnly, styles.sectionItem)} {...actionBinding(section.action)}>
+                        <i className={`${styles.sectionIcon} ${section.icon}`}></i>
+                        <span className={styles.sectionLabel}>{section.label}</span>
                     </Link>
                 )) }
             </div>

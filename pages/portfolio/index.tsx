@@ -33,8 +33,8 @@ const PortfolioLink = ({ title, description, techStack, links }: ProjectModel) =
     <div className={styles.linkContainer}>
         <h3 className={styles.title}>{title}</h3>
         { links.map(({ link, label }) => (
-            <Link key={`link-to-${label.toLowerCase()}`} href={link}>
-                <a target="_blank" className={styles.linkItem}>{label}</a>
+            <Link key={`link-to-${label.toLowerCase()}`} href={link} target="_blank" className={styles.linkItem}>
+                {label}
             </Link>
         ))}
         <span className={styles.description}>{description}</span>

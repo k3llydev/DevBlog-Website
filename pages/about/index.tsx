@@ -53,10 +53,8 @@ const AboutMe: NextPage<Page.StaticGenericProps> = ({ seo }) => {
 
                 <h2 className={styles.subtitle}>Know more</h2>
                 <br/>
-                <Link href="https://github.com/k3llydev">
-                    <a className={styles.inlineLink} target='_blank'>
-                        <i className="bi bi-github"></i>
-                    </a>
+                <Link href="https://github.com/k3llydev" className={styles.inlineLink} target='_blank'>
+                    <i className="bi bi-github"></i>
                 </Link>
 
                 <br/><br/>

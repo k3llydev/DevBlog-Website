@@ -28,22 +28,16 @@ const DynamicPagination = ({ mainPage, baseLink, pages, currentPage }: Paginatio
 
     return(
         <div className={styles.container}>
-            <Link href={getPageLink(currentPage - 1)}>
-                <a className={previousPageClassName}>
-                    <i className="bi bi-chevron-compact-left"></i>
-                </a>
+            <Link href={getPageLink(currentPage - 1)} className={previousPageClassName}>
+                <i className="bi bi-chevron-compact-left"></i>
             </Link>
             { availablePages.map(page => (
-                <Link href={getPageLink(page)} key={`page-${page}`}>
-                    <a className={getItemClassName(page)}>
-                        <span>{page}</span>
-                    </a>
+                <Link href={getPageLink(page)} key={`page-${page}`} className={getItemClassName(page)}>
+                    <span>{page}</span>
                 </Link>
             )) }
-            <Link href={getPageLink(currentPage + 1)}>
-                <a className={nextPageClassName}>
-                    <i className="bi bi-chevron-compact-right"></i>
-                </a>
+            <Link href={getPageLink(currentPage + 1)} className={nextPageClassName}>
+                <i className="bi bi-chevron-compact-right"></i>
             </Link>
         </div>
     );
