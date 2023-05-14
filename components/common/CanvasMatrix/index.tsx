@@ -32,7 +32,7 @@ const CanvasMatrix = ({ variant, onAnimationDone }: CanvasMatrixProps) => {
     const [ctx, setCtx] = useState<CanvasRenderingContext2D | null>();
     const [drops, setDrops] = useState<number[]>([]);
     const [spacing, setSpacing] = useState(0);
-    const [color, setColor] = useState('rgba(142, 5, 194, 1)');
+    const [color, setColor] = useState('rgba(187, 0, 255, 1)');
     const [animationSpeed, setAnimationSpeed] = useState(35);
     const [animationDone, setAnimationDone] = useState(false);
 
@@ -40,7 +40,7 @@ const CanvasMatrix = ({ variant, onAnimationDone }: CanvasMatrixProps) => {
     useEffect(() => {
         if(animationDone) {
             setAnimationSpeed(60);
-            setColor('rgba(142, 5, 194, 0.5)');
+            setColor('rgba(187, 0, 255, 0.5)');
             onAnimationDone();
         };
     }, [animationDone]);

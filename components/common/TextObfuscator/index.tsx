@@ -18,7 +18,7 @@ const TextObfuscator = ({ text }: TextObfuscatorProps) => {
             font-size="${size}"
             x="${(size - 1) * (index)}"
             y="${size}"
-            fill="#9200C9"
+            fill="#BB00FF"
         >
             ${char}
         </text>

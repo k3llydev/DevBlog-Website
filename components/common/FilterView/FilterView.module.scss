@@ -2,9 +2,10 @@
 
 .paginationButton {
     background: from-theme("texts", "primary");
-    font-family: use-font("primary");
+    font-family: use-font("secondary");
     border: 0;
-    padding: 1rem;
+    letter-spacing: .1rem;
+    padding: .5rem 2rem;
     margin-bottom: -1px;
     font-size: 1rem;
     font-weight: 600;

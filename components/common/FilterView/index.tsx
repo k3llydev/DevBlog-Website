@@ -52,8 +52,8 @@ const FilterView = ({ availableTags, availableCategories, currentLabel, currentC
     }
 
     return(
-        <div>
-            <button onClick={toggleFilterView} className={styles.paginationButton}>Search or filter</button>
+        <>
+            <button onClick={toggleFilterView} className={styles.paginationButton}>Filter</button>
             <div className={`${styles.filterContainer} ${isSelectingFilters ? styles.open : ''}`}>
                 <section className={styles.filterContent}>
 
@@ -87,7 +87,7 @@ const FilterView = ({ availableTags, availableCategories, currentLabel, currentC
                     </div>
                 </section>
             </div>
-        </div>
+        </>
     );
 };
 

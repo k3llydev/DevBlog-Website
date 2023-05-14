@@ -2,26 +2,26 @@ export const CONSTANTS = {
     GENERAL: {
         TITLE: 'Kelly\'s Portfolio',
         NAME: 'Home',
-        DESCRIPTION: 'A Software Engineer portfolio containing my professional experience, a list of projects I\'ve built and my DevBlog where I post a variety of software related stuff.',
-        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'portfolio']
+        DESCRIPTION: 'A portfolio storing the professional journey of a software engineer specialized in the web environment.',
+        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'portfolio', 'k3llydev', 'k3lly.dev']
     },
     ABOUT: {
         TITLE: 'Who is Kelly?',
         NAME: 'About',
-        DESCRIPTION: 'A Software Engineer brief introduction that will help anyone interested to know me a bit more.',
-        KEYWORDS: ['software', 'developer', 'engineer', 'aboutme']
+        DESCRIPTION: 'I am a software engineer specialized in web development who likes to share knowledge at the same time I learn.',
+        KEYWORDS: ['software', 'developer', 'engineer', 'aboutme', 'k3llydev', 'k3lly.dev']
     },
     BLOG: {
         TITLE: 'Latest posts',
         NAME: 'DevBlog',
-        DESCRIPTION: 'A space designated to share knowledge of what I\'ve learnt during my years of experience as a Software Engineer.',
-        KEYWORDS: ['software', 'devblog', 'programming', 'engineering']
+        DESCRIPTION: 'A software engineer\'s diary. Techy stuff, manuals and helpful resources for anybody willing to learn form another perspective.',
+        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'k3llydev', 'k3lly.dev']
     },
     PORTFOLIO: {
-        TITLE: 'Project list',
+        TITLE: 'Public list',
         NAME: 'Portfolio',
-        DESCRIPTION: 'A space containing some projects I\'ve built during my career as a Software Engineer.',
-        KEYWORDS: ['software', 'programming', 'portfolio', 'github']
+        DESCRIPTION: 'Catalogue of projects that endorse most of the DevBlog\'s content.',
+        KEYWORDS: ['software', 'programming', 'portfolio', 'github', 'k3llydev', 'k3lly.dev']
     },
     NOT_FOUND: {
         TITLE: '404',
@@ -30,7 +30,7 @@ export const CONSTANTS = {
         KEYWORDS: ['software', 'programming', '404', 'notfound']
     },
     APP_HOST: 'https://k3lly.dev',
-    API_HOST: 'https://k3y.app',
+    API_HOST: '',
     APP_AUTHOR: 'k3llydev',
-    CONTACT_EMAIL: [99,111,110,116,97,99,116,64,107,51,108,108,121,46,100,101,118], // Yes, I h8 spam. :)
+    CONTACT_EMAIL: [104,101,108,108,111,64,107,51,108,108,121,46,100,101,118], // Yes, I h8 spam. :)
 };
