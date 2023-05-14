@@ -1,0 +1,38 @@
+[
+    {
+        "title": "this.website",
+        "description": "A personal project I created in my free time not only to prove above average interest in coding but to stay up to date in different technologies.",
+        "techStack": [
+            "TypeScript",
+            "React.js",
+            "Redux",
+            "Sass",
+            "Firebase",
+            "GitHub Actions"
+        ],
+        "published_date": "-1",
+        "links": [
+            {
+                "label": "Source Code",
+                "link": "https://github.com/k3llydev/DevBlog-Website"
+            }
+        ]
+    },
+    {
+        "title": "Markdown Post Writter",
+        "description": "This is the Node.js application I use to keep track of my DevBlog posts.",
+        "techStack": [
+            "TypeScript",
+            "Markdown",
+            "GitHub Actions",
+            "gh-pages"
+        ],
+        "published_date": "-1",
+        "links": [
+            {
+                "label": "Source Code",
+                "link": "https://github.com/k3llydev/DevBlog-Archive"
+            }
+        ]
+    }
+]
