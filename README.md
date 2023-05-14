@@ -1,19 +1,16 @@
 # Portfolio Website
 
-This is a personal project I started not only to stay up-to-date 
+A WIP project I am using to share relevant knowledge I've obtained through the years.
 
 ## Built with
 
 - TypeScript
-- React
+- React (v18)
 - Redux
 - Next.js
-- MongoDB
-- Mongoose
 
 ## Environment variables
 
-`MONGODB_URI`: The configured path where the application should consume MongoDB.\
 `GITHUB_TOKEN`: A private token from GitHub to authenticate against GitHub's API and retrieve assets on build time.
 
 ## Configuration
