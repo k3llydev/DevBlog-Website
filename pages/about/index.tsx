@@ -44,7 +44,7 @@ const AboutMe: NextPage<Page.StaticGenericProps> = ({ seo }) => {
             <h1 className={styles.title}>About me</h1>
             <br/>
             <span className={styles.intro}>
-                I'm a {_('self-taught')}, highly disciplined, and <i>{_('"technology speedrunner"')}</i> engineer who excels at thinking both inside and outside the box.<br/>
+                I&apos;m a {_('self-taught')}, highly disciplined, and <i>{_('"technology speedrunner"')}</i> engineer who excels at thinking both inside and outside the box.<br/>
                 My journey began {startedYearsAgo} years ago when I discovered that my favorite game at the time, Minecraft, was moddable.
 
                 <br/><br/>
