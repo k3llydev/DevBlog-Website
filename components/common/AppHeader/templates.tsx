@@ -1,4 +1,5 @@
 import styles from './AppHeader.module.scss';
+import { CONSTANTS } from '../../../lib/constants'
 
 export const DEFAULT = {
     containerClassName: styles.container,
@@ -22,9 +23,9 @@ export const CENTERED = {
         { icon: 'bi bi-briefcase-fill', label: 'Portfolio', href: '/portfolio/', mobileOnly: true },
     ],
     staticItems: [
-        { icon: 'bi bi-github', label: 'GitHub', href: 'https://github.com/k3llydev' },
+        { icon: 'bi bi-github', label: 'GitHub', href: `https://github.com/${CONSTANTS.GITHUB_USERNAME}` },
         { icon: 'bi bi-patch-check-fill', label: 'About me', href: '/about/' },
-        { icon: 'bi bi-github', label: 'GitHub', href: 'https://github.com/k3llydev', mobileOnly: true },
+        { icon: 'bi bi-github', label: 'GitHub', href: `https://github.com/${CONSTANTS.GITHUB_USERNAME}`, mobileOnly: true },
         { icon: 'bi bi-patch-check-fill', label: 'About me', href: '/about/', mobileOnly: true }
     ]
 };

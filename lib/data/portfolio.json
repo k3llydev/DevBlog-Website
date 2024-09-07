@@ -34,5 +34,47 @@
                 "link": "https://github.com/k3llydev/DevBlog-Archive"
             }
         ]
+    },
+    {
+        "title": "Rozzeta",
+        "description": "A Discord bot that progessively builds communities.",
+        "techStack": [
+            "TypeScript",
+            "Discord.js",
+            "Nest.js",
+            "Necord",
+            "Redis",
+            "Prisma"
+        ],
+        "published_date": "-1",
+        "links": [
+            {
+                "label": "Source Code",
+                "link": "https://github.com/k3llydev/Rozetta"
+            },
+            {
+                "label": "Website",
+                "link": "https://rozetta.gg/"
+            }
+        ]
+    },
+    {
+        "title": "Overwatch 2 scalable workshops",
+        "description": "An attempt to use templates to make OW2 workshops actually scalable.",
+        "techStack": [
+            "TypeScript",
+            "ejs"
+        ],
+        "published_date": "-1",
+        "links": [
+            {
+                "label": "Source Code",
+                "link": "https://github.com/k3llydev/better-friendly-no-kill"
+            },
+            {
+                "label": "Website",
+                "link": "https://k3llydev.github.io/better-friendly-no-kill/"
+            }
+        ]
     }
 ]
