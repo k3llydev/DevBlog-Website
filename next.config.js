@@ -13,7 +13,7 @@ module.exports = () => ({
     unoptimized: true,
   },
   env: {
-    GITHUB_BLOG_USERNAME: 'k3llydev',
+    GITHUB_BLOG_USERNAME: 'qelli',
     GITHUB_BLOG_REPO: 'DevBlog-Archive',
     GITHUB_BLOG_ASSETS_BRANCH: 'resources',
     GITHUB_BLOG_CONTENTS_BRANCH: 'archive'

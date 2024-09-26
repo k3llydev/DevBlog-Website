@@ -14,7 +14,7 @@
         "links": [
             {
                 "label": "Source Code",
-                "link": "https://github.com/k3llydev/DevBlog-Website"
+                "link": "https://github.com/qelli/DevBlog-Website"
             }
         ]
     },
@@ -31,7 +31,7 @@
         "links": [
             {
                 "label": "Source Code",
-                "link": "https://github.com/k3llydev/DevBlog-Archive"
+                "link": "https://github.com/qelli/DevBlog-Archive"
             }
         ]
     },
@@ -50,7 +50,7 @@
         "links": [
             {
                 "label": "Source Code",
-                "link": "https://github.com/k3llydev/Rozetta"
+                "link": "https://github.com/qelli/Rozetta"
             },
             {
                 "label": "Website",
@@ -69,11 +69,11 @@
         "links": [
             {
                 "label": "Source Code",
-                "link": "https://github.com/k3llydev/better-friendly-no-kill"
+                "link": "https://github.com/qelli/better-friendly-no-kill"
             },
             {
                 "label": "Website",
-                "link": "https://k3llydev.github.io/better-friendly-no-kill/"
+                "link": "https://qelli.github.io/better-friendly-no-kill/"
             }
         ]
     }

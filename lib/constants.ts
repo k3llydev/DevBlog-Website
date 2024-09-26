@@ -3,25 +3,25 @@ export const CONSTANTS = {
         TITLE: 'K3LLY',
         NAME: 'Home',
         DESCRIPTION: 'A portfolio storing the professional journey of a software engineer specialized in the web environment.',
-        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'portfolio', 'k3llydev', 'k3lly.dev']
+        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'portfolio', 'k3lly.dev']
     },
     ABOUT: {
         TITLE: 'K3LLY',
         NAME: 'About',
         DESCRIPTION: 'I am a software engineer specialized in web development who likes to share knowledge at the same time I learn.',
-        KEYWORDS: ['software', 'developer', 'engineer', 'aboutme', 'k3llydev', 'k3lly.dev']
+        KEYWORDS: ['software', 'developer', 'engineer', 'aboutme', 'k3lly.dev']
     },
     BLOG: {
         TITLE: 'Posts',
         NAME: 'DevBlog',
         DESCRIPTION: 'A software engineer\'s diary. Techy stuff, manuals and helpful resources for anybody willing to learn form another perspective.',
-        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'k3llydev', 'k3lly.dev']
+        KEYWORDS: ['software', 'devblog', 'programming', 'engineering', 'k3lly.dev']
     },
     PORTFOLIO: {
         TITLE: 'List',
         NAME: 'Portfolio',
         DESCRIPTION: 'Catalogue of projects that endorse most of the DevBlog\'s content.',
-        KEYWORDS: ['software', 'programming', 'portfolio', 'github', 'k3llydev', 'k3lly.dev']
+        KEYWORDS: ['software', 'programming', 'portfolio', 'github', 'k3lly.dev']
     },
     NOT_FOUND: {
         TITLE: '404',
@@ -32,7 +32,7 @@ export const CONSTANTS = {
     APP_HOST: 'https://k3lly.dev',
     API_HOST: '',
     APP_AUTHOR: 'Kelly',
-    GITHUB_USERNAME: 'k3llydev',
+    GITHUB_USERNAME: 'qelli',
 
     // Yes, I h8 spam. :)
     CONTACT: {
